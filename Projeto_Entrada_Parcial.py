@@ -32,7 +32,6 @@ else:
     
 url_2 = "https://brasilapi.com.br/api/cep/v1/{cep}"
 response_2 = requests.get(url_2)
-print(response_2)
 if response_2.status_code == 200:
     notificacao()
 else:
