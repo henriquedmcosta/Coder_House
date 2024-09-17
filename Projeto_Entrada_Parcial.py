@@ -23,14 +23,14 @@ if response.status_code == 200:
 else:
     notificacao_1()  
     
-url_1 = "https://brasilapi.com.br/api/banks/v1/{code}"
+url_1 = "https://brasilapi.com.br/api/cep/v1/{cep}"
 response_1 = requests.get(url_1)
 if response_1.status_code == 200:
     notificacao()
 else:
     notificacao_1()
     
-url_2 = "https://brasilapi.com.br/api/cep/v1/{cep}"
+url_2 = "https://brasilapi.com.br/api/cnpj/v1/{cnpj}"
 response_2 = requests.get(url_2)
 if response_2.status_code == 200:
     notificacao()
