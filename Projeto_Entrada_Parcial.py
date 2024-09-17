@@ -7,14 +7,14 @@ def notificacao():
         title = "Alerta",
         message = "Importação bem sucedida",
         app_name = "API",
-        timeout = 0.8 )
+        timeout = 10 )
 
 def notificacao_1():
     notification.notify(
         title = "Alerta",
         message = "Importação mal sucedida",
         app_name = "API",
-        timeout = 0.8 )
+        timeout = 10 )
 
 url = "https://brasilapi.com.br/api/banks/v1"
 response = requests.get(url)
