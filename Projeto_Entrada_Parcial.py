@@ -37,3 +37,8 @@ if response_2.status_code == 200:
 else:
     notificacao_1()
 
+df_bancos = pd.DataFrame(response.json())
+
+df_cep = pd.DataFrame(response_1.json())
+
+df_cnpj = pd.DataFrame(response_2.json())
